@@ -1,55 +1,95 @@
-Título do Projeto: Chatbot Inteligente com GPT
+# 🤖 ConversAI — Chatbot Inteligente com GPT
 
-Descrição:
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
+[![Flask](https://img.shields.io/badge/Flask-Web%20App-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![crewAI](https://img.shields.io/badge/crewAI-Multi--Agent-FF4B4B?style=for-the-badge&logoColor=white)](https://crewai.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-Este projeto é um chatbot inteligente desenvolvido em Python que utiliza a API da OpenAI (GPT) para gerar respostas a perguntas do usuário. O chatbot é implementado usando o framework Flask e a biblioteca Flask-Ngrok para expor o aplicativo localmente na web.
+> Chatbot inteligente construído do zero com Python e crewAI — agentes autônomos que colaboram para gerar respostas contextuais via GPT, servidos por uma interface web com Flask.
 
-Requisitos:
+---
 
-Python 3.x
-Bibliotecas: openai, flask, flask-ngrok
+## ✨ Funcionalidades
 
-Para instalar as dependências, execute:
+- 🧠 **Agentes IA autônomos** com crewAI — múltiplos agentes colaborando em pipeline
+- 💬 **Respostas contextuais** via API da OpenAI (GPT-3.5 / GPT-4)
+- 🌐 **Interface web** com Flask exposta via ngrok (acesso externo instantâneo)
+- 🔄 **Histórico de conversa** mantido entre turnos
+- ⚡ Setup simples — rodando em minutos
 
-pip install openai flask flask-ngrok
+---
 
+## 🛠️ Tech Stack
 
-Substitua a string 'SUA_CHAVE_DE_API' pela sua chave de API da OpenAI no arquivo. Você pode obter uma chave ao se inscrever na plataforma OpenAI.
+| Camada | Tecnologia |
+|--------|-----------|
+| IA / Agentes | OpenAI GPT + crewAI |
+| Backend | Python 3.x + Flask |
+| Exposição | Flask-Ngrok |
+| Interface | HTML/CSS embutido no Flask |
 
-Como Executar:
+---
 
-Após configurar sua chave de API, execute o aplicativo com o comando:
+## 🚀 Como Usar
 
-python nome_do_seu_arquivo.py
+### 1. Clone o repositório
+```bash
+git clone https://github.com/Ronbragaglia/ConversAI.git
+cd ConversAI
+```
 
-O aplicativo será exposto via ngrok, permitindo que você interaja com ele através de um link fornecido no terminal.
+### 2. Instale as dependências
+```bash
+pip install openai flask flask-ngrok crewai
+```
 
+### 3. Configure sua chave de API
+No arquivo principal, substitua:
+```python
+openai.api_key = "SUA_CHAVE_DE_API"
+```
 
-Estrutura do Código:
+### 4. Execute
+```bash
+python app.py
+```
 
-Instalação de Dependências: O primeiro bloco de código instala as bibliotecas necessárias.
-Configuração da API: O segundo bloco importa a biblioteca OpenAI e define a chave da API.
-Implementação do Flask: O restante do código define a aplicação Flask, incluindo a lógica para gerar respostas e um template HTML para a interface do usuário.
-Template HTML:
+O ngrok vai gerar um link público — acesse no navegador e comece a conversar.
 
-O aplicativo possui um formulário simples que permite ao usuário inserir uma pergunta. As respostas geradas pelo chatbot são exibidas na mesma página.
+---
 
+## 🏗️ Arquitetura
 
-Exemplo de Uso:
+```
+Usuário → Formulário HTML (Flask)
+             ↓
+         Agente crewAI
+             ↓
+         OpenAI GPT API
+             ↓
+         Resposta exibida na interface
+```
 
-Após executar o aplicativo, acesse o link gerado pelo ngrok em um navegador e interaja com o chatbot digitando perguntas.
-Contribuições:
+---
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request para melhorias e novas funcionalidades.
+## 📁 Estrutura
 
-Estrutura do Código:
+```
+ConversAI/
+├── app.py          # Aplicação Flask + lógica dos agentes
+├── requirements.txt
+└── README.md
+```
 
-Instalação de Dependências: O primeiro bloco de código instala as bibliotecas necessárias.
+---
 
-Configuração da API: O segundo bloco importa a biblioteca OpenAI e define a chave da API.
+## 🤝 Contribuições
 
-Implementação do Flask: O restante do código define a aplicação Flask, incluindo a lógica para gerar respostas e um template HTML para a interface do usuário.
+Pull requests são bem-vindos! Abra uma issue para discutir melhorias antes.
 
-Exemplo de Uso:
+---
 
-Após executar o aplicativo, acesse o link gerado pelo ngrok em um navegador e interaja com o chatbot digitando perguntas.
+<div align="center">
+  <sub>Feito com 🤖 por <a href="https://github.com/Ronbragaglia">Rone Bragaglia</a> · ML Engineer & Fundador <a href="https://cobrancaauto.com.br">CobrançaAuto</a></sub>
+</div>
