@@ -1,4 +1,4 @@
-# 🤖 ConversAI — Chatbot Inteligente com GPT
+# 🤖 ConversAI: Chatbot Inteligente com GPT
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
@@ -6,17 +6,17 @@
 [![crewAI](https://img.shields.io/badge/crewAI-Multi--Agent-FF4B4B?style=for-the-badge&logoColor=white)](https://crewai.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-> Chatbot inteligente construído do zero com Python e crewAI — agentes autônomos que colaboram para gerar respostas contextuais via GPT, servidos por uma interface web com Flask.
+> Chatbot inteligente construído do zero com Python e crewAI: agentes autônomos que colaboram para gerar respostas contextuais via GPT, servidos por uma interface web com Flask.
 
 ---
 
 ## ✨ Funcionalidades
 
-- 🧠 **Agentes IA autônomos** com crewAI — múltiplos agentes colaborando em pipeline
+- 🧠 **Agentes IA autônomos** com crewAI: múltiplos agentes colaborando em pipeline
 - 💬 **Respostas contextuais** via API da OpenAI (GPT-3.5 / GPT-4)
 - 🌐 **Interface web** com Flask exposta via ngrok (acesso externo instantâneo)
 - 🔄 **Histórico de conversa** mantido entre turnos
-- ⚡ Setup simples — rodando em minutos
+- ⚡ Setup simples: rodando em minutos
 
 ---
 
@@ -55,7 +55,7 @@ openai.api_key = "SUA_CHAVE_DE_API"
 python app.py
 ```
 
-O ngrok vai gerar um link público — acesse no navegador e comece a conversar.
+O ngrok vai gerar um link público: acesse no navegador e comece a conversar.
 
 ---
 
